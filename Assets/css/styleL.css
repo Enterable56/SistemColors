@@ -1,0 +1,136 @@
+*{
+   padding: 0;
+   margin: 0;
+   box-sizing: border-box; 
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-image:url(../img/fondo1.jpg);
+    background-size: cover;
+}
+.container-form{
+    display: flex;
+    border-radius: 20px;
+    box-shadow: 0 5px 7px rgba(0, 0, 0, .1) ;
+    height: 500px;
+    max-width: 900px;
+    transition: all 1s ease;
+    margin: 10px;
+      
+}
+.information{
+    width: 40%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    background-color: #c7eef3;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+.info-childs{
+    width: 100%;
+    padding: 0 30px;
+}
+.info-childs h2{
+    font-size: 2.5rem;
+    color: #333;
+}
+.info-childs p{
+    margin: 15px 0;
+    color: #555;
+}
+.info-childs input{
+    background-color:transparent;
+    outline: none;
+    border: solid 2px #9191bd;
+    border-radius: 20px;
+    padding: 10px 20px ;
+    color:#9191bd ;
+    cursor: pointer;
+    transition:background-color .3s ease;
+}
+.info-childs input:hover{
+    background-color: #9191bd;
+    border: none;
+    color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, .1) ;
+
+}
+
+/*  Caja de la derecha */
+
+
+.trabajador-information{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60%;
+    text-align: center;
+    background-color: #f8f8f8;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+.trabajador-childs{
+    padding: 0 30px;
+   
+}
+.trabajador-childs h2{
+    color: #333;
+    font-size: 2rem;
+}
+.form-admin{
+    margin: 30px 0 0 0;
+}
+.form-admin label{
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    border-radius: 20px;
+    padding: 0 10px;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, .1) ;
+}
+.form-admin label input{
+    width: 100%;
+    padding: 10px;
+    background-color: #fff;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    color: #333;
+}
+.icons{
+    color: blue;
+}
+.form-admin input[type="submit"]{
+    background-color: #9191bd;
+    color: #fff;
+    border-radius: 20px;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    margin-top: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, .1) ;
+
+}
+.form-admin input[type="submit"]:hover{
+    background-color: #7a7a9a;
+}
+
+.hide {
+    position: absolute;
+    transform: translateY(-300%);
+}
+
+/*responsive form*/
+@media screen and (max-width: 750px){
+    html {
+        font-size: 12px;
+    }
+
+    
+}
